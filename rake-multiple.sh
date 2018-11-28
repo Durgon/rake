@@ -8,7 +8,7 @@ rm -rf Albums/
 #--------END OF TESTING--------
 
 #ask for file
-read -p "Specify the file to rake: " list
+list=$1
 #create the albums directory if not present
 mkdir -p Albums
 for line in `cat $list`; do
